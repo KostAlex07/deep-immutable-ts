@@ -1,0 +1,49 @@
+{
+  "name": "deep-immutable-ts",
+  "version": "1.0.0",
+  "description": "Deep immutable TypeScript types and utility functions",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "Alexey Kostrin",
+  "license": "MIT",
+  "type": "commonjs",  
+  "keywords": [
+    "typescript",
+    "immutable",
+    "deep-immutable",
+    "readonly",
+    "types",
+    "utility-types"
+  ],  
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<your-account>/deep-immutable-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<your-account>/deep-immutable-ts/issues"
+  },
+  "homepage": "https://github.com/<your-account>/deep-immutable-ts#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "exports": {
+  ".": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.js"
+  }
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}
