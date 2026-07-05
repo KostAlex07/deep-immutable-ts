@@ -15,9 +15,12 @@ export function deepFreeze<T>(obj: T, options?: DeepFreezeOptions): Immutable<T>
 
 function deepFreezeFunc(obj: any, options?: DeepFreezeOptions): any {
   if (Array.isArray(obj)) {
-    Object.freeze(obj);
-    return obj.map(o => deepFreezeFunc(o, options));
+  for (const item of obj) {
+    deepFreezeFunc(item, options);
   }
+
+  return Object.freeze(obj);
+}
 
   const isIgnored = options?.ignoredConstructors?.some(ctor => obj instanceof ctor) ?? false;
   
