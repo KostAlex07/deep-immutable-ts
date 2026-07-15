@@ -10,9 +10,11 @@
   "keywords": [
     "typescript",
     "immutable",
-    "deep-immutable",
     "readonly",
-    "types",
+    "deep-freeze",
+    "deep-immutable",
+    "freeze",
+    "immutability",
     "utility-types"
   ],  
   "files": [
@@ -22,15 +24,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<your-account>/deep-immutable-ts.git"
+    "url": "git+https://github.com/KostAlex07/deep-immutable-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/<your-account>/deep-immutable-ts/issues"
+    "url": "https://github.com/KostAlex07/deep-immutable-ts/issues"
   },
-  "homepage": "https://github.com/<your-account>/deep-immutable-ts#readme",
-  "engines": {
-    "node": ">=18"
-  },
+  "homepage": "https://github.com/KostAlex07/deep-immutable-ts#readme",
   "sideEffects": false,
   "exports": {
   ".": {

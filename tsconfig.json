@@ -10,7 +10,6 @@
       "DOM"
     ],
     "declaration": true,
-    "sourceMap": true,
 
     "skipLibCheck": true
   },
