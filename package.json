@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Deep immutable TypeScript types and utility functions",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "Alexey Kosterin",
   "license": "MIT",
-  "type": "commonjs",  
+  "type": "module",
   "keywords": [
     "typescript",
     "immutable",
@@ -16,7 +17,7 @@
     "freeze",
     "immutability",
     "utility-types"
-  ],  
+  ],
   "files": [
     "dist",
     "README.md",
@@ -32,17 +33,19 @@
   "homepage": "https://github.com/KostAlex07/deep-immutable-ts#readme",
   "sideEffects": false,
   "exports": {
-  ".": {
-    "types": "./dist/index.d.ts",
-    "require": "./dist/index.js"
-  }
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
   },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch",
+    "build": "tsup",
+    "watch": "tsup --watch",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "typescript": "6.0.3"
+    "tsup": "^8.5.1",
+    "typescript": "5.9"
   }
 }
