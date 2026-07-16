@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+### Fixed
+
+- fix: correct CommonJS entry point.
+
 ## 1.1.0
 
 ### Added
