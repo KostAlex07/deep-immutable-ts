@@ -1,4 +1,6 @@
 # deep-immutable-ts
+[![npm](https://img.shields.io/npm/v/deep-immutable-ts)](https://www.npmjs.com/package/deep-immutable-ts)
+[![License](https://img.shields.io/npm/l/deep-immutable-ts)](LICENSE)
 
 Deep immutable TypeScript types with runtime helpers.
 
